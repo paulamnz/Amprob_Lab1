@@ -1,0 +1,1 @@
+/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/hardware/include/cartesian_trajectory_planning/r6bot_hardware.hpp

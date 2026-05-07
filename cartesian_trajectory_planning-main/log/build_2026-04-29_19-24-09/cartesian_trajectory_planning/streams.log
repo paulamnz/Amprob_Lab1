@@ -1,0 +1,177 @@
+[0.017s] Invoking command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning
+[0.397s] -- The CXX compiler identification is GNU 11.4.0
+[0.415s] -- Detecting CXX compiler ABI info
+[0.532s] -- Detecting CXX compiler ABI info - done
+[0.543s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.543s] -- Detecting CXX compile features
+[0.545s] -- Detecting CXX compile features - done
+[0.562s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.760s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.854s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.945s] -- Found pluginlib: 5.1.3 (/opt/ros/humble/share/pluginlib/cmake)
+[1.030s] -- Found hardware_interface: 2.53.1 (/opt/ros/humble/share/hardware_interface/cmake)
+[1.111s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.123s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.142s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.170s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.198s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.560s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.567s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.630s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.703s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.709s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.728s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.733s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.745s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.759s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.782s] -- Looking for C++ include pthread.h
+[1.948s] -- Looking for C++ include pthread.h - found
+[1.949s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.089s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.090s] -- Found Threads: TRUE  
+[2.178s] -- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)
+[2.202s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.204s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.204s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.217s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[2.226s] -- Found controller_interface: 2.53.1 (/opt/ros/humble/share/controller_interface/cmake)
+[2.232s] -- Found realtime_tools: 2.15.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[2.269s] -- Found ament_cmake_pytest: 1.3.14 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[3.594s] -- Configuring done
+[3.626s] -- Generating done
+[3.637s] -- Build files have been written to: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning
+[3.650s] Invoked command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning
+[3.651s] Invoking command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning -- -j8 -l8
+[3.717s] [ 11%] [32mBuilding CXX object CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o[0m
+[3.718s] [ 33%] [32mBuilding CXX object CMakeFiles/send_circular_trajectory.dir/reference_generator/send_circular_trajectory.cpp.o[0m
+[3.719s] [ 33%] [32mBuilding CXX object CMakeFiles/cartesian_trajectory_planning.dir/hardware/r6bot_hardware.cpp.o[0m
+[3.721s] [ 44%] [32mBuilding CXX object CMakeFiles/send_linear_trajectory.dir/reference_generator/send_linear_trajectory.cpp.o[0m
+[3.723s] [ 55%] [32mBuilding CXX object CMakeFiles/cartesian_trajectory_planning.dir/controller/r6bot_controller.cpp.o[0m
+[8.803s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:[m[K In function ‘[01m[Kstd::pair<tf2::Vector3, tf2::Quaternion> PoseInterpolation(const Matrix4d&, const Matrix4d&, double)[m[K’:
+[8.803s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:139:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstart_pose[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.803s]   139 |     [01;35m[Kconst Eigen::Matrix4d &start_pose[m[K,
+[8.803s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[8.803s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:140:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kend_pose[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.803s]   140 |     [01;35m[Kconst Eigen::Matrix4d &end_pose[m[K,
+[8.803s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[8.804s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:141:12:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klambda[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.804s]   141 |     [01;35m[Kdouble lambda[m[K)
+[8.804s]       |     [01;35m[K~~~~~~~^~~~~~[m[K
+[8.804s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:[m[K In function ‘[01m[Kstd::pair<tf2::Vector3, tf2::Quaternion> ComputeNextCartesianPose(const Matrix4d&, const Matrix4d&, const Matrix4d&, double, double, double)[m[K’:
+[8.804s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:151:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_0[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.804s]   151 |     [01;35m[Kconst Eigen::Matrix4d &pose_0[m[K,
+[8.804s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[8.805s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:152:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.805s]   152 |     [01;35m[Kconst Eigen::Matrix4d &pose_1[m[K,
+[8.805s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[8.805s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:153:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.805s]   153 |     [01;35m[Kconst Eigen::Matrix4d &pose_2[m[K,
+[8.805s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[8.805s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:154:12:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktau[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.805s]   154 |     [01;35m[Kdouble tau[m[K,
+[8.806s]       |     [01;35m[K~~~~~~~^~~[m[K
+[11.265s] [ 66%] [32m[1mLinking CXX executable send_linear_trajectory[0m
+[11.454s] [ 77%] [32m[1mLinking CXX executable send_circular_trajectory[0m
+[11.658s] [ 77%] Built target send_linear_trajectory
+[11.764s] [ 77%] Built target send_circular_trajectory
+[12.085s] [ 88%] [32m[1mLinking CXX executable send_trajectory[0m
+[12.365s] [ 88%] Built target send_trajectory
+[15.132s] [100%] [32m[1mLinking CXX shared library libcartesian_trajectory_planning.so[0m
+[15.786s] [100%] Built target cartesian_trajectory_planning
+[15.800s] Invoked command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning -- -j8 -l8
+[15.813s] Invoking command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning
+[15.823s] -- Install configuration: ""
+[15.823s] -- Execute custom install script
+[15.824s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning//cartesian_trajectory_planning.xml
+[15.836s] -- Up-to-date symlink: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning//cartesian_trajectory_planning.xml
+[15.836s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/include/cartesian_trajectory_planning/cartesian_trajectory_planning/r6bot_hardware.hpp
+[15.848s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:67 (file):
+[15.849s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[15.849s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[15.849s]   Use the cmake_policy command to set the policy and suppress this warning.
+[15.849s] Call Stack (most recent call first):
+[15.849s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:328 (ament_cmake_symlink_install_directory)
+[15.849s]   cmake_install.cmake:46 (include)
+[15.849s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[15.849s] [0m
+[15.849s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/build/.built_by
+[15.859s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/build/COLCON_IGNORE
+[15.870s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/.colcon_install_layout
+[15.881s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/COLCON_IGNORE
+[15.891s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/_local_setup_util_ps1.py
+[15.902s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/_local_setup_util_sh.py
+[15.913s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/local_setup.bash
+[15.923s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/local_setup.ps1
+[15.934s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/local_setup.sh
+[15.944s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/local_setup.zsh
+[15.955s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/setup.bash
+[15.966s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/setup.ps1
+[15.976s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/setup.sh
+[15.987s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/install/setup.zsh
+[15.998s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/launch/view_r6bot.launch.py
+[16.008s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/COLCON_IGNORE
+[16.021s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/build_2026-04-29_19-21-36/events.log
+[16.033s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/build_2026-04-29_19-21-36/logger_all.log
+[16.046s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/build_2026-04-29_19-22-20/events.log
+[16.058s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/build_2026-04-29_19-22-20/logger_all.log
+[16.070s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/build_2026-04-29_19-22-40/events.log
+[16.083s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/build_2026-04-29_19-22-40/logger_all.log
+[16.095s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/latest/events.log
+[16.107s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/latest/logger_all.log
+[16.119s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/latest_build/events.log
+[16.132s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/log/latest_build/logger_all.log
+[16.144s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/ros2_control/r6bot.ros2_control.xacro
+[16.156s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/urdf/r6bot.urdf.xacro
+[16.169s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/collision/link_0.stl
+[16.182s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/collision/link_1.stl
+[16.192s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/collision/link_2.stl
+[16.202s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/collision/link_3.stl
+[16.212s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/collision/link_4.stl
+[16.222s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/collision/link_5.stl
+[16.232s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/collision/link_6.stl
+[16.242s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/visual/link_0.dae
+[16.252s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/visual/link_1.dae
+[16.262s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/visual/link_2.dae
+[16.272s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/visual/link_3.dae
+[16.283s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/visual/link_4.dae
+[16.294s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/visual/link_5.dae
+[16.305s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/meshes/visual/link_6.dae
+[16.316s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/rviz/view_robot.rviz
+[16.327s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/srdf/r6bot.srdf
+[16.338s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/urdf/inc/create_link.xacro
+[16.349s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/r6bot/urdf/r6bot_description.urdf.xacro
+[16.361s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/launch/r6bot_controller.launch.py
+[16.372s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/launch/send_circular_trajectory.launch.py
+[16.382s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/launch/send_linear_trajectory.launch.py
+[16.393s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/launch/send_trajectory.launch.py
+[16.404s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/config/r6bot_controller.yaml
+[16.415s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/config/poses.yaml
+[16.428s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/lib/cartesian_trajectory_planning/send_trajectory
+[16.440s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/lib/cartesian_trajectory_planning/send_linear_trajectory
+[16.451s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/lib/cartesian_trajectory_planning/send_circular_trajectory
+[16.463s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/environment/library_path.sh
+[16.473s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/environment/library_path.dsv
+[16.485s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/ament_index/resource_index/package_run_dependencies/cartesian_trajectory_planning
+[16.496s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/ament_index/resource_index/parent_prefix_path/cartesian_trajectory_planning
+[16.507s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/environment/ament_prefix_path.sh
+[16.518s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/environment/ament_prefix_path.dsv
+[16.529s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/environment/path.sh
+[16.540s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/environment/path.dsv
+[16.550s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/local_setup.bash
+[16.561s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/local_setup.sh
+[16.572s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/local_setup.zsh
+[16.584s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/local_setup.dsv
+[16.595s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/package.dsv
+[16.605s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/ament_index/resource_index/packages/cartesian_trajectory_planning
+[16.616s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/cartesian_trajectory_planning
+[16.627s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/ament_index/resource_index/controller_interface__pluginlib__plugin/cartesian_trajectory_planning
+[16.637s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/cmake/ament_cmake_export_targets-extras.cmake
+[16.648s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.658s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/cmake/cartesian_trajectory_planningConfig.cmake
+[16.671s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/cmake/cartesian_trajectory_planningConfig-version.cmake
+[16.684s] -- Symlinking: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/package.xml
+[16.696s] -- Installing: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/lib/libcartesian_trajectory_planning.so
+[16.704s] -- Set runtime path of "/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/lib/libcartesian_trajectory_planning.so" to ""
+[16.705s] -- Installing: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/cmake/export_cartesian_trajectory_planningExport.cmake
+[16.705s] -- Installing: /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/share/cartesian_trajectory_planning/cmake/export_cartesian_trajectory_planningExport-noconfig.cmake
+[16.708s] Invoked command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning

@@ -1,0 +1,1 @@
+/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/bringup/launch/send_trajectory.launch.py

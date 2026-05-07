@@ -1,0 +1,1 @@
+/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/description/launch/view_r6bot.launch.py

@@ -1,0 +1,4 @@
+[ 22%] Built target send_linear_trajectory
+[ 44%] Built target send_circular_trajectory
+[ 55%] [32mBuilding CXX object CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o[0m
+[ 88%] Built target cartesian_trajectory_planning

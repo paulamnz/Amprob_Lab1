@@ -142,7 +142,13 @@ std::pair<tf2::Vector3, tf2::Quaternion> PoseInterpolation(
 {
     tf2::Vector3 p_interp;    // Placeholder for the interpolated position
     tf2::Quaternion q_interp; // Placeholder for the interpolated quaternion
+    Eigen::Matrix4d interp_pose = start_pose + lambda*(end_pose-start_pose);
 
+    // sacamos matriz rotac
+    Eigen::Matrix3d rot_interp(end_pose.block<3,3>(0,0));
+    // sacamos posic
+    p_interp = {(interp_pose(0,3), interp_pose(1,3), interp_pose(2,3))}
+    q_interp = rot2Quat(rot_interp);
     return {p_interp, q_interp};
 }
 
@@ -257,7 +263,7 @@ int main(int argc, char **argv)
     // Exercise 2 : Cartesian trajectory generation
     int tau = 1;
     int T = 10;
-    bool exercise_2 = false; // Set to true to execute Exercise 2
+    bool exercise_2 = true; // Set to true to execute Exercise 2
 
     if (exercise_2)
     {

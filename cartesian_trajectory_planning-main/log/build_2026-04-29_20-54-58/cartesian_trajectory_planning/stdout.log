@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target send_trajectory[0m
+[ 22%] Built target send_circular_trajectory
+[ 55%] Built target cartesian_trajectory_planning
+[ 77%] Built target send_linear_trajectory
+[ 88%] [32mBuilding CXX object CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o[0m

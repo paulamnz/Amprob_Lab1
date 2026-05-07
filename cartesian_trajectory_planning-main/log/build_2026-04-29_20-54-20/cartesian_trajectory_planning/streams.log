@@ -1,0 +1,27 @@
+[0.018s] Invoking command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning -- -j8 -l8
+[0.080s] [35m[1mConsolidate compiler generated dependencies of target send_trajectory[0m
+[0.102s] [ 22%] Built target send_linear_trajectory
+[0.109s] [ 33%] [32mBuilding CXX object CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o[0m
+[0.110s] [ 55%] Built target send_circular_trajectory
+[0.115s] [ 88%] Built target cartesian_trajectory_planning
+[4.635s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:[m[K In function ‘[01m[Kstd::pair<tf2::Vector3, tf2::Quaternion> PoseInterpolation(const Matrix4d&, const Matrix4d&, double)[m[K’:
+[4.635s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:150:24:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(tf2::Vector3) (Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 4>, 1>::Scalar&)[m[K’
+[4.636s]   150 |     p_interp = [01;31m[Kp_interp((interp_pose(0,3), interp_pose(1,3), interp_pose(2,3)))[m[K
+[4.636s]       |                [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.640s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:[m[K In function ‘[01m[Kstd::pair<tf2::Vector3, tf2::Quaternion> ComputeNextCartesianPose(const Matrix4d&, const Matrix4d&, const Matrix4d&, double, double, double)[m[K’:
+[4.640s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:157:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_0[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.640s]   157 |     [01;35m[Kconst Eigen::Matrix4d &pose_0[m[K,
+[4.640s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.640s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:158:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.640s]   158 |     [01;35m[Kconst Eigen::Matrix4d &pose_1[m[K,
+[4.640s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.641s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:159:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.641s]   159 |     [01;35m[Kconst Eigen::Matrix4d &pose_2[m[K,
+[4.641s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.641s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:160:12:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktau[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.641s]   160 |     [01;35m[Kdouble tau[m[K,
+[4.641s]       |     [01;35m[K~~~~~~~^~~[m[K
+[6.021s] gmake[2]: *** [CMakeFiles/send_trajectory.dir/build.make:76: CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o] Error 1
+[6.021s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/send_trajectory.dir/all] Error 2
+[6.022s] gmake: *** [Makefile:146: all] Error 2
+[6.025s] Invoked command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning -- -j8 -l8

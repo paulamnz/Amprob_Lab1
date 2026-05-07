@@ -1,0 +1,1 @@
+/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake

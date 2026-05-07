@@ -1,0 +1,22 @@
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:[m[K In function ‘[01m[Kstd::pair<tf2::Vector3, tf2::Quaternion> ComputeNextCartesianPose(const Matrix4d&, const Matrix4d&, const Matrix4d&, double, double, double)[m[K’:
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:157:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_0[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  157 |     [01;35m[Kconst Eigen::Matrix4d &pose_0[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:158:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  158 |     [01;35m[Kconst Eigen::Matrix4d &pose_1[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:159:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  159 |     [01;35m[Kconst Eigen::Matrix4d &pose_2[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:160:12:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktau[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  160 |     [01;35m[Kdouble tau[m[K,
+      |     [01;35m[K~~~~~~~^~~[m[K
+[33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:67 (file):
+  Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+  symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:328 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:46 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m

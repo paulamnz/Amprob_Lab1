@@ -1,0 +1,94 @@
+[0.000000] (-) TimerEvent: {}
+[0.000890] (cartesian_trajectory_planning) JobQueued: {'identifier': 'cartesian_trajectory_planning', 'dependencies': OrderedDict()}
+[0.001157] (cartesian_trajectory_planning) JobStarted: {'identifier': 'cartesian_trajectory_planning'}
+[0.015758] (cartesian_trajectory_planning) JobProgress: {'identifier': 'cartesian_trajectory_planning', 'progress': 'cmake'}
+[0.016558] (cartesian_trajectory_planning) JobProgress: {'identifier': 'cartesian_trajectory_planning', 'progress': 'build'}
+[0.017589] (cartesian_trajectory_planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning', '--', '-j8', '-l8'], 'cwd': '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'p'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning/lib:/home/p/labrob_ws/install/micro_ros_agent/lib:/home/p/labrob_ws/install/micro_ros_msgs/lib:/home/p/ros2_ws/install/micro_ros_agent/lib:/home/p/Desktop/cypr/cypr2_ws/install/navigation/lib:/home/p/rosgame_ws/install/rosgame_msgs/lib:/home/p/rosgame_ws/install/rosgame_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/p/uma_environment_tools/matlogger2/build:/home/p/uma_environment_tools/matlogger2/build'), ('HOME', '/home/p'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.117.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1445'), ('WORKSPACE_TO_SOURCE', '/home/p/ros/catkin_ws'), ('SYSTEMD_EXEC_PID', '1626'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8065'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install:/home/p/ros2_ws/install:/home/p/Desktop/cypr/cypr2_ws/install:/home/p/cypr_ws/install:/home/p/ros/catkin_ws/install:/home/p/install:/home/p/rosgame_ws/install:/home/p/labrob_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'p'), ('JOURNAL_STREAM', '8:13636'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'p'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('INTERFACE_TYPE', 'SIMULATION'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/p/.local/bin:/opt/ros/humble/bin:/home/p/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/p/.local/bin:/home/p/.local/bin'), ('SESSION_MANAGER', 'local/p-HP-Laptop-15-da0xxx:@/tmp/.ICE-unix/1603,unix/p-HP-Laptop-15-da0xxx:/tmp/.ICE-unix/1603'), ('INVOCATION_ID', '737c7002b1f7400fac33ebe351d37348'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'ArcMidnight-cursors'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XUM1O3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-42c0141711.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning:/home/p/labrob_ws/install/micro_ros_agent:/home/p/labrob_ws/install/micro_ros_msgs:/home/p/ros2_ws/install/motion:/home/p/Desktop/cypr/cypr2_ws/install/navigation:/home/p/Desktop/cypr/cypr2_ws/install/arm_controller:/home/p/install/sdl2_vendor:/home/p/rosgame_ws/install/warrior_07:/home/p/rosgame_ws/install/rosgame_msgs:/home/p/rosgame_ws/install/rosgame_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/p/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/p/labrob_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/p/Desktop/cypr/cypr2_ws/install/navigation/local/lib/python3.10/dist-packages:/home/p/rosgame_ws/install/rosgame_msgs/local/lib/python3.10/dist-packages:/home/p/rosgame_ws/install/rosgame_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('EDITOR', 'nano -w'), ('CMAKE_PREFIX_PATH', '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/install/cartesian_trajectory_planning:/home/p/labrob_ws/install/micro_ros_agent:/home/p/labrob_ws/install/micro_ros_msgs:/home/p/ros2_ws/install/motion:/home/p/ros2_ws/install/micro_ros_agent:/home/p/Desktop/cypr/cypr2_ws/install/navigation:/home/p/Desktop/cypr/cypr2_ws/install/arm_controller:/home/p/install/sdl2_vendor:/home/p/rosgame_ws/install/warrior_07:/home/p/rosgame_ws/install/rosgame_msgs:/home/p/rosgame_ws/install/rosgame_bridge:/opt/ros/humble')]), 'shell': False}
+[0.080880] (cartesian_trajectory_planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target send_trajectory\x1b[0m\n'}
+[0.099720] (-) TimerEvent: {}
+[0.103353] (cartesian_trajectory_planning) StdoutLine: {'line': b'[ 22%] Built target send_linear_trajectory\n'}
+[0.110461] (cartesian_trajectory_planning) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o\x1b[0m\n'}
+[0.111436] (cartesian_trajectory_planning) StdoutLine: {'line': b'[ 55%] Built target send_circular_trajectory\n'}
+[0.115792] (cartesian_trajectory_planning) StdoutLine: {'line': b'[ 88%] Built target cartesian_trajectory_planning\n'}
+[0.199860] (-) TimerEvent: {}
+[0.300161] (-) TimerEvent: {}
+[0.400510] (-) TimerEvent: {}
+[0.500814] (-) TimerEvent: {}
+[0.601485] (-) TimerEvent: {}
+[0.702041] (-) TimerEvent: {}
+[0.802377] (-) TimerEvent: {}
+[0.902714] (-) TimerEvent: {}
+[1.003013] (-) TimerEvent: {}
+[1.103313] (-) TimerEvent: {}
+[1.203609] (-) TimerEvent: {}
+[1.303883] (-) TimerEvent: {}
+[1.404181] (-) TimerEvent: {}
+[1.504471] (-) TimerEvent: {}
+[1.604783] (-) TimerEvent: {}
+[1.705085] (-) TimerEvent: {}
+[1.805377] (-) TimerEvent: {}
+[1.905676] (-) TimerEvent: {}
+[2.005945] (-) TimerEvent: {}
+[2.106250] (-) TimerEvent: {}
+[2.206552] (-) TimerEvent: {}
+[2.306880] (-) TimerEvent: {}
+[2.407178] (-) TimerEvent: {}
+[2.507472] (-) TimerEvent: {}
+[2.607748] (-) TimerEvent: {}
+[2.708030] (-) TimerEvent: {}
+[2.808330] (-) TimerEvent: {}
+[2.908633] (-) TimerEvent: {}
+[3.008909] (-) TimerEvent: {}
+[3.109222] (-) TimerEvent: {}
+[3.209535] (-) TimerEvent: {}
+[3.309806] (-) TimerEvent: {}
+[3.410138] (-) TimerEvent: {}
+[3.510455] (-) TimerEvent: {}
+[3.610787] (-) TimerEvent: {}
+[3.711101] (-) TimerEvent: {}
+[3.811419] (-) TimerEvent: {}
+[3.911722] (-) TimerEvent: {}
+[4.012006] (-) TimerEvent: {}
+[4.112332] (-) TimerEvent: {}
+[4.212652] (-) TimerEvent: {}
+[4.312936] (-) TimerEvent: {}
+[4.413201] (-) TimerEvent: {}
+[4.513492] (-) TimerEvent: {}
+[4.613804] (-) TimerEvent: {}
+[4.636447] (cartesian_trajectory_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<tf2::Vector3, tf2::Quaternion> PoseInterpolation(const Matrix4d&, const Matrix4d&, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.636647] (cartesian_trajectory_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:150:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for call to \xe2\x80\x98\x1b[01m\x1b[K(tf2::Vector3) (Eigen::DenseCoeffsBase<Eigen::Matrix<double, 4, 4>, 1>::Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.636746] (cartesian_trajectory_planning) StderrLine: {'line': b'  150 |     p_interp = \x1b[01;31m\x1b[Kp_interp((interp_pose(0,3), interp_pose(1,3), interp_pose(2,3)))\x1b[m\x1b[K\n'}
+[4.636833] (cartesian_trajectory_planning) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.641061] (cartesian_trajectory_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<tf2::Vector3, tf2::Quaternion> ComputeNextCartesianPose(const Matrix4d&, const Matrix4d&, const Matrix4d&, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.641239] (cartesian_trajectory_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:157:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpose_0\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.641342] (cartesian_trajectory_planning) StderrLine: {'line': b'  157 |     \x1b[01;35m\x1b[Kconst Eigen::Matrix4d &pose_0\x1b[m\x1b[K,\n'}
+[4.641419] (cartesian_trajectory_planning) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[4.641492] (cartesian_trajectory_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:158:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpose_1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.641569] (cartesian_trajectory_planning) StderrLine: {'line': b'  158 |     \x1b[01;35m\x1b[Kconst Eigen::Matrix4d &pose_1\x1b[m\x1b[K,\n'}
+[4.641642] (cartesian_trajectory_planning) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[4.641714] (cartesian_trajectory_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:159:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpose_2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.641808] (cartesian_trajectory_planning) StderrLine: {'line': b'  159 |     \x1b[01;35m\x1b[Kconst Eigen::Matrix4d &pose_2\x1b[m\x1b[K,\n'}
+[4.641884] (cartesian_trajectory_planning) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[4.641955] (cartesian_trajectory_planning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:160:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktau\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.642031] (cartesian_trajectory_planning) StderrLine: {'line': b'  160 |     \x1b[01;35m\x1b[Kdouble tau\x1b[m\x1b[K,\n'}
+[4.642102] (cartesian_trajectory_planning) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.713899] (-) TimerEvent: {}
+[4.814195] (-) TimerEvent: {}
+[4.914501] (-) TimerEvent: {}
+[5.014798] (-) TimerEvent: {}
+[5.115094] (-) TimerEvent: {}
+[5.215395] (-) TimerEvent: {}
+[5.315703] (-) TimerEvent: {}
+[5.415974] (-) TimerEvent: {}
+[5.516242] (-) TimerEvent: {}
+[5.616554] (-) TimerEvent: {}
+[5.716847] (-) TimerEvent: {}
+[5.817145] (-) TimerEvent: {}
+[5.917441] (-) TimerEvent: {}
+[6.017809] (-) TimerEvent: {}
+[6.022161] (cartesian_trajectory_planning) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/send_trajectory.dir/build.make:76: CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o] Error 1\n'}
+[6.022505] (cartesian_trajectory_planning) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/send_trajectory.dir/all] Error 2\n'}
+[6.022845] (cartesian_trajectory_planning) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.025563] (cartesian_trajectory_planning) CommandEnded: {'returncode': 2}
+[6.043116] (cartesian_trajectory_planning) JobEnded: {'identifier': 'cartesian_trajectory_planning', 'rc': 2}
+[6.053703] (-) EventReactorShutdown: {}

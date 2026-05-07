@@ -1,0 +1,35 @@
+[0.019s] Invoking command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning -- -j8 -l8
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target send_trajectory[0m
+[0.098s] [ 22%] Built target send_circular_trajectory
+[0.108s] [ 44%] Built target send_linear_trajectory
+[0.111s] [ 77%] Built target cartesian_trajectory_planning
+[0.118s] [ 88%] [32mBuilding CXX object CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o[0m
+[4.610s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:[m[K In function ‘[01m[Kstd::pair<tf2::Vector3, tf2::Quaternion> PoseInterpolation(const Matrix4d&, const Matrix4d&, double)[m[K’:
+[4.611s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:159:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_start[m[K’ was not declared in this scope; did you mean ‘[01m[Kva_start[m[K’?
+[4.611s]   159 |     q_interp = [01;31m[Kq_start[m[K * (q_start^-1 * q_end)^lambda
+[4.611s]       |                [01;31m[K^~~~~~~[m[K
+[4.611s]       |                [32m[Kva_start[m[K
+[4.615s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:159:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_end[m[K’ was not declared in this scope; did you mean ‘[01m[Kva_end[m[K’?
+[4.615s]   159 |     q_interp = q_start * (q_start^-1 * [01;31m[Kq_end[m[K)^lambda
+[4.615s]       |                                        [01;31m[K^~~~~[m[K
+[4.615s]       |                                        [32m[Kva_end[m[K
+[4.615s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:162:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[4.615s]   162 | [01;35m[K}[m[K
+[4.615s]       | [01;35m[K^[m[K
+[4.618s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:[m[K In function ‘[01m[Kstd::pair<tf2::Vector3, tf2::Quaternion> ComputeNextCartesianPose(const Matrix4d&, const Matrix4d&, const Matrix4d&, double, double, double)[m[K’:
+[4.619s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:166:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_0[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.619s]   166 |     [01;35m[Kconst Eigen::Matrix4d &pose_0[m[K,
+[4.619s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.619s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:167:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.619s]   167 |     [01;35m[Kconst Eigen::Matrix4d &pose_1[m[K,
+[4.619s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.619s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:168:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.619s]   168 |     [01;35m[Kconst Eigen::Matrix4d &pose_2[m[K,
+[4.619s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.619s] [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:169:12:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktau[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.619s]   169 |     [01;35m[Kdouble tau[m[K,
+[4.619s]       |     [01;35m[K~~~~~~~^~~[m[K
+[5.970s] gmake[2]: *** [CMakeFiles/send_trajectory.dir/build.make:76: CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o] Error 1
+[5.970s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/send_trajectory.dir/all] Error 2
+[5.971s] gmake: *** [Makefile:146: all] Error 2
+[5.974s] Invoked command in '/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/build/cartesian_trajectory_planning -- -j8 -l8

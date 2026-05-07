@@ -1,0 +1,90 @@
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:[m[K In function ‘[01m[Kstd::pair<tf2::Vector3, tf2::Quaternion> PoseInterpolation(const Matrix4d&, const Matrix4d&, double)[m[K’:
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:159:38:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand types are ‘[01m[Kint[m[K’ and ‘[01m[Ktf2::Quaternion[m[K’)
+  159 |     q_interp = start_q * (start_q^[32m[K-1[m[K [01;31m[K*[m[K [34m[Kend_q[m[K)^lambda
+      |                                   [32m[K~~[m[K [01;31m[K^[m[K [34m[K~~~~~[m[K
+      |                                   [32m[K|[m[K    [34m[K|[m[K
+      |                                   [32m[Kint[m[K  [34m[Ktf2::Quaternion[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:19[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.h:19[m[K,
+                 from [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:18[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:364:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Vector3 tf2::operator*(const tf2::Vector3&, const tf2::Vector3&)[m[K’
+  364 | [01;36m[Koperator[m[K*(const Vector3& v1, const Vector3& v2)
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:364:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst tf2::Vector3&[m[K’
+  364 | operator*([01;36m[Kconst Vector3& v1[m[K, const Vector3& v2)
+      |           [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:384:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Vector3 tf2::operator*(const tf2::Vector3&, const tf2Scalar&)[m[K’
+  384 | [01;36m[Koperator[m[K*(const Vector3& v, const tf2Scalar& s)
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:384:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst tf2::Vector3&[m[K’
+  384 | operator*([01;36m[Kconst Vector3& v[m[K, const tf2Scalar& s)
+      |           [01;36m[K~~~~~~~~~~~~~~~^[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:391:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Vector3 tf2::operator*(const tf2Scalar&, const tf2::Vector3&)[m[K’
+  391 | [01;36m[Koperator[m[K*(const tf2Scalar& s, const Vector3& v)
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:391:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst tf2::Vector3&[m[K’
+  391 | operator*(const tf2Scalar& s, [01;36m[Kconst Vector3& v[m[K)
+      |                               [01;36m[K~~~~~~~~~~~~~~~^[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.h:19[m[K,
+                 from [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:18[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:407:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Quaternion tf2::operator*(const tf2::Quaternion&, const tf2::Quaternion&)[m[K’
+  407 | [01;36m[Koperator[m[K*(const Quaternion& q1, const Quaternion& q2) {
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:407:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst tf2::Quaternion&[m[K’
+  407 | operator*([01;36m[Kconst Quaternion& q1[m[K, const Quaternion& q2) {
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:415:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Quaternion tf2::operator*(const tf2::Quaternion&, const tf2::Vector3&)[m[K’
+  415 | [01;36m[Koperator[m[K*(const Quaternion& q, const Vector3& w)
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:415:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst tf2::Quaternion&[m[K’
+  415 | operator*([01;36m[Kconst Quaternion& q[m[K, const Vector3& w)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:424:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Quaternion tf2::operator*(const tf2::Vector3&, const tf2::Quaternion&)[m[K’
+  424 | [01;36m[Koperator[m[K*(const Vector3& w, const Quaternion& q)
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:424:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst tf2::Vector3&[m[K’
+  424 | operator*([01;36m[Kconst Vector3& w[m[K, const Quaternion& q)
+      |           [01;36m[K~~~~~~~~~~~~~~~^[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.h:19[m[K,
+                 from [01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:18[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:611:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Vector3 tf2::operator*(const tf2::Matrix3x3&, const tf2::Vector3&)[m[K’
+  611 | [01;36m[Koperator[m[K*(const Matrix3x3& m, const Vector3& v)
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:611:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst tf2::Matrix3x3&[m[K’
+  611 | operator*([01;36m[Kconst Matrix3x3& m[m[K, const Vector3& v)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:618:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Vector3 tf2::operator*(const tf2::Vector3&, const tf2::Matrix3x3&)[m[K’
+  618 | [01;36m[Koperator[m[K*(const Vector3& v, const Matrix3x3& m)
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:618:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst tf2::Vector3&[m[K’
+  618 | operator*([01;36m[Kconst Vector3& v[m[K, const Matrix3x3& m)
+      |           [01;36m[K~~~~~~~~~~~~~~~^[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:624:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Matrix3x3 tf2::operator*(const tf2::Matrix3x3&, const tf2::Matrix3x3&)[m[K’
+  624 | [01;36m[Koperator[m[K*(const Matrix3x3& m1, const Matrix3x3& m2)
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:624:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst tf2::Matrix3x3&[m[K’
+  624 | operator*([01;36m[Kconst Matrix3x3& m1[m[K, const Matrix3x3& m2)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:162:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  162 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:[m[K In function ‘[01m[Kstd::pair<tf2::Vector3, tf2::Quaternion> ComputeNextCartesianPose(const Matrix4d&, const Matrix4d&, const Matrix4d&, double, double, double)[m[K’:
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:166:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_0[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  166 |     [01;35m[Kconst Eigen::Matrix4d &pose_0[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:167:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  167 |     [01;35m[Kconst Eigen::Matrix4d &pose_1[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:168:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose_2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  168 |     [01;35m[Kconst Eigen::Matrix4d &pose_2[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/p/amprob_repo/Amprob_Lab1_I/cartesian_trajectory_planning-main/reference_generator/send_trajectory.cpp:169:12:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktau[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  169 |     [01;35m[Kdouble tau[m[K,
+      |     [01;35m[K~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/send_trajectory.dir/build.make:76: CMakeFiles/send_trajectory.dir/reference_generator/send_trajectory.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/send_trajectory.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
