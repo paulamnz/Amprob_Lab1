@@ -140,15 +140,63 @@ std::pair<tf2::Vector3, tf2::Quaternion> PoseInterpolation(
     const Eigen::Matrix4d &end_pose,
     double lambda)
 {
-    tf2::Vector3 p_interp;    // Placeholder for the interpolated position
-    tf2::Quaternion q_interp; // Placeholder for the interpolated quaternion
-    Eigen::Matrix4d interp_pose = start_pose + lambda*(end_pose-start_pose);
+    tf2::Vector3 p_interp;
+    tf2::Quaternion q_interp;
 
-    // sacamos matriz rotac
-    Eigen::Matrix3d rot_interp(end_pose.block<3,3>(0,0));
-    // sacamos posic
-    p_interp = {(interp_pose(0,3), interp_pose(1,3), interp_pose(2,3))}
-    q_interp = rot2Quat(rot_interp);
+    // posicion interpolada linealmente
+    Eigen::Matrix4d interp_pose = start_pose + lambda * (end_pose - start_pose);
+    p_interp = tf2::Vector3(interp_pose(0,3), interp_pose(1,3), interp_pose(2,3));
+
+    // extraer quaternions de las poses originales
+    Eigen::Matrix3d R_start;
+    R_start << start_pose(0,0), start_pose(0,1), start_pose(0,2),
+               start_pose(1,0), start_pose(1,1), start_pose(1,2),
+               start_pose(2,0), start_pose(2,1), start_pose(2,2);
+
+    Eigen::Matrix3d R_end;
+    R_end << end_pose(0,0), end_pose(0,1), end_pose(0,2),
+             end_pose(1,0), end_pose(1,1), end_pose(1,2),
+             end_pose(2,0), end_pose(2,1), end_pose(2,2);
+
+    tf2::Quaternion q_start = rot2Quat(R_start);
+    tf2::Quaternion q_end   = rot2Quat(R_end);
+
+    // quaternion relativo: cuanto hay que girar de q_start a q_end
+    tf2::Quaternion q_rel = MuliplyQuaternions(InverseQuaternion(q_start), q_end);
+
+    // camino mas corto
+    if (q_rel.w() < 0)
+    {
+        q_rel = tf2::Quaternion(-q_rel.x(), -q_rel.y(), -q_rel.z(), -q_rel.w());
+    }
+
+    // extraer angulo y eje
+    double theta = 2.0 * std::acos(q_rel.w());
+    double sin_half = std::sin(theta / 2.0);
+
+    if (std::abs(sin_half) < 1e-6)
+    {
+        q_interp = q_start;
+    }
+    else
+    {
+        double nx = q_rel.x() / sin_half;
+        double ny = q_rel.y() / sin_half;
+        double nz = q_rel.z() / sin_half;
+
+        double theta_interp = lambda * theta;
+
+        tf2::Quaternion q_delta(
+            nx * std::sin(theta_interp / 2.0),
+            ny * std::sin(theta_interp / 2.0),
+            nz * std::sin(theta_interp / 2.0),
+            std::cos(theta_interp / 2.0)
+        );
+
+        q_interp = MuliplyQuaternions(q_start, q_delta);
+        q_interp.normalize();
+    }
+
     return {p_interp, q_interp};
 }
 
@@ -161,14 +209,136 @@ std::pair<tf2::Vector3, tf2::Quaternion> ComputeNextCartesianPose(
     double T,
     double t)
 {
+    tf2::Vector3 p_interp;
+    tf2::Quaternion q_interp;
     // Check if t is within the valid range of [-T, T]
     if (t < -T || t > T)
     {
         throw std::out_of_range("Parameter t is outside [-T, T]");
     }
+    else if (t <= -tau)
+    {
+        // interpolación simple pose0 -> pose1
+        double lambda = (t + T) / T;
+        auto [p, q] = PoseInterpolation(pose_0, pose_1, lambda);
+        p_interp = p;
+        q_interp = q;
+    }
+    else if (t >= tau)
+    {
+        // interpolación simple pose1 -> pose2
+        double lambda = t / T;
+        auto [p, q] = PoseInterpolation(pose_1, pose_2, lambda);
+        p_interp = p;
+        q_interp = q;
+    }else{
 
-    const tf2::Vector3 p_interp; // Placeholder for the interpolated position
-    tf2::Quaternion q_interp;    // Placeholder for the interpolated quaternion
+        //posicion
+        tf2::Vector3 p0_vec(pose_0(0,3), pose_0(1,3), pose_0(2,3));
+        tf2::Vector3 p1_vec(pose_1(0,3), pose_1(1,3), pose_1(2,3));
+        tf2::Vector3 p2_vec(pose_2(0,3), pose_2(1,3), pose_2(2,3));
+        tf2::Vector3 delta_p1 = p1_vec - p0_vec;
+        tf2::Vector3 delta_p2 = p2_vec - p1_vec;
+
+
+        double c1 = std::pow(tau - t, 2) / (4.0 * tau * T);
+        double c2 = std::pow(tau + t, 2) / (4.0 * tau * T);
+
+
+        p_interp = p1_vec - c1 * delta_p1 + c2 * delta_p2;
+
+        //orientacion
+
+        Eigen::Matrix3d R0;
+        R0 << pose_0(0,0), pose_0(0,1), pose_0(0,2),
+            pose_0(1,0), pose_0(1,1), pose_0(1,2),
+            pose_0(2,0), pose_0(2,1), pose_0(2,2);
+
+        Eigen::Matrix3d R1;
+        R1 << pose_1(0,0), pose_1(0,1), pose_1(0,2),
+            pose_1(1,0), pose_1(1,1), pose_1(1,2),
+            pose_1(2,0), pose_1(2,1), pose_1(2,2);
+
+        Eigen::Matrix3d R2;
+        R2 << pose_2(0,0), pose_2(0,1), pose_2(0,2),
+            pose_2(1,0), pose_2(1,1), pose_2(1,2),
+            pose_2(2,0), pose_2(2,1), pose_2(2,2);
+
+        tf2::Quaternion q0 = rot2Quat(R0);
+        tf2::Quaternion q1 = rot2Quat(R1);
+        tf2::Quaternion q2 = rot2Quat(R2);
+
+        // rotaciones relativas
+        tf2::Quaternion q01 = MuliplyQuaternions(InverseQuaternion(q0), q1);
+        tf2::Quaternion q12 = MuliplyQuaternions(InverseQuaternion(q1), q2);
+
+        if (q01.w() < 0)
+        {
+            q01 = tf2::Quaternion(-q01.x(), -q01.y(), -q01.z(), -q01.w());
+        }
+
+        if (q12.w() < 0)
+        {
+            q12 = tf2::Quaternion(-q12.x(), -q12.y(), -q12.z(), -q12.w());
+        }
+
+        // qk1 desde q01 
+        tf2::Quaternion qk1; //qk1 = q [ -(τ-t)²/(4τT) · θ01 , n01 ]
+        double theta01 = 2.0 * std::acos(q01.w()); //angulo
+        double sin_half_01 = std::sin(theta01 / 2.0); //eje
+
+        if (std::abs(sin_half_01) < 1e-6) // para no dividir x 0
+        {
+            qk1 = tf2::Quaternion(0, 0, 0, 1);
+        }
+        else 
+        {
+            // eje -> xyz del quaternion
+            double nx01 = q01.x() / sin_half_01;
+            double ny01 = q01.y() / sin_half_01;
+            double nz01 = q01.z() / sin_half_01;
+
+            double theta_k1 = -c1 * theta01; //giras una fracción del ángulo según tiempo
+
+            //reconstruye el cuaternión
+            qk1 = tf2::Quaternion(
+                nx01 * std::sin(theta_k1 / 2.0),
+                ny01 * std::sin(theta_k1 / 2.0),
+                nz01 * std::sin(theta_k1 / 2.0),
+                std::cos(theta_k1 / 2.0)
+            );
+        }
+
+        // qk2 desde q12
+        tf2::Quaternion qk2;
+        double theta12 = 2.0 * std::acos(q12.w());
+        double sin_half_12 = std::sin(theta12 / 2.0);
+
+        if (std::abs(sin_half_12) < 1e-6)
+        {
+            qk2 = tf2::Quaternion(0, 0, 0, 1);
+        }
+        else
+        {
+            double nx12 = q12.x() / sin_half_12;
+            double ny12 = q12.y() / sin_half_12;
+            double nz12 = q12.z() / sin_half_12;
+
+            double theta_k2 = c2 * theta12;
+
+            qk2 = tf2::Quaternion(
+                nx12 * std::sin(theta_k2 / 2.0),
+                ny12 * std::sin(theta_k2 / 2.0),
+                nz12 * std::sin(theta_k2 / 2.0),
+                std::cos(theta_k2 / 2.0)
+            );
+        }
+
+        // q(t) = q1 * qk1 * qk2
+        q_interp = MuliplyQuaternions(q1, MuliplyQuaternions(qk1, qk2));
+        q_interp.normalize();
+        }
+
     return {p_interp, q_interp};
 }
 
